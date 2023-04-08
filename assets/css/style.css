@@ -191,10 +191,40 @@ header {
 
 /* BANNER PART CSS START */
 .carousel-item {
-    max-height: 600px;
+    max-height: 650px;
     background-position: center;
 }
 /* BANNER PART CSS END */
+
+/* ABOUT GRAND SYLHET HOTEL CSS START */
+#about{
+    background: var(--bgc);
+    height: 600px;
+}
+
+.aboutus-img{
+    position: relative;
+}
+
+.long-img {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+}
+.long-img img{
+    width: 500px;
+    height: 500px;
+}
+
+.circle-img img {
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: 206px;
+    left: -40px;
+}
+/* ABOUT GRAND SYLHET HOTEL CSS END */
 
 
 

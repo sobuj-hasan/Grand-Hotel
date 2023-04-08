@@ -9,10 +9,11 @@ header {
     max-width: 205px;
 }
 .logo i {
-    font-size: 22px;
+    font-size: 20px;
     padding: 8px;
-    padding-right: 0;
     transition: .2s;
+    border: 2px solid var(--cp);
+    border-radius: 5px;
 }
 .logo i:hover {
     color: var(--sc);
@@ -29,10 +30,10 @@ header {
 }
 .menubar ul li a {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     display: inline-block;
-    padding: 7px 24px;
+    padding: 7px 15px;
     color: var(--wc);
 }
 .menubar .login-menu {
@@ -53,11 +54,14 @@ header {
 }
 .mobile-logo i {
     font-size: 20px;
-    float: right;
-    margin: 5px 20px;
     color: var(--pc);
     cursor: pointer;
-    padding: 5px;
+    border: 1px solid var(--cp);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    line-height: 28px;
+    text-align: center;
 }
 .mobile-logo i:hover {
     color: var(--sc);
@@ -68,11 +72,11 @@ header {
     font-size: 16px;
     -webkit-transition: .4s;
     transition: .4s;
-    color: var(--psb);
+    color: var(--cp);
     font-weight: 400;
 }
 .custom.accordion-button:hover {
-    color: var(--sc);
+    color: var(--cp);
 }
 .custom.accordion-button:focus {
     -webkit-box-shadow: none;
@@ -268,7 +272,74 @@ header {
 /* ROOM PART CSS END */
 
 
+/* FETURE SECTION */
 
+/* .feture-box{
+    background-image: linear-gradient(#0000666b, #0000666b), url(../img/image/hotel1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+} */
+.feture-box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.feture-box .feture-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.feture-box .feture-overlay2{
+    background: #99660091;
+    padding: 10px;
+    border-radius: 5px;
+}
+.feture-box h4{
+    color: var(--wc);
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    /* border-bottom: 2px solid var(--wc); */
+}
+.feture-box img{
+    width: 100%;
+}
+.feture-box h4::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: var(--wc);
+}
+.feture-box h6{
+    color: var(--wc);
+    text-align: center;
+    font-size: 22px;
+}
+.feture-box p{
+    color: var(--wc);
+    text-align: center;
+    line-height: 28px;
+    /* display: none; */
+}
+.feture-overlay2 p{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+.feture-box:hover .feture-overlay2 p{
+    opacity: 1;
+    position: inherit;
+    transition: .4s;
+}
+
+/* FETURE SECTION */
 
 
 
@@ -356,21 +427,153 @@ hr.footer{
     line-height: 24px;
     color: var(--wc);
 }
-/* copyright section */
-.copyright-part{
-    background: var(--bp);
+.footer-logo img{
+    width: 80%;
 }
-.copyright-part p{
-    color: var(--wc);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
+.footer-logo a{
+    width: 100%;
 }
-.copyright-part ul li a{
-    color: var(--wc);
+.footer-social a i{
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: var(--wc);
+    color: var(--cp);
+    border-radius: 50%;
     font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid var(--wc);
+    transition: .3s;
+}
+.footer-social a i:hover{
+    background: var(--cp);
+    color: var(--wc);
+}
+.footer-about{
+    padding: 20px 0;
+}
+.footer-about p{
+    margin: 0;
+    font-size: 15px;
+    color: var(--wc);
+    line-height: 27px;
+}
+.footer-location ul li{
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    color: var(--wc);
+    font-size: 15px;
+}
+.footer-location ul li i{
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: var(--wc);
+    top: 5px;
+}
+.footer-social h6{
+    font-size: 16px;
+    color: var(--wc);
+    padding-bottom: 5px;
+}
+.footer-form-box{
+    position: relative;
+}
+.footer-form-box input{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer-form-box button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--cp);
+    height: 100%;
+    border: 1px solid var(--wc);
+    color: var(--wc);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .3s;
+}
+.footer-form-box button:hover{
+    background: var(--wc);
+    color: var(--cp);
+    border-left: 1px solid var(--cp);
+}
+.footer-main h4{
+    font-size: 22px;
+    color: var(--wc);
+}
+.footer-main h4::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #cccccc;
+    margin-top: 15px;
+}
+.footer-link ul li a{
+    color: #ffffff;
+    font-size: 15px;
+    transition: .4s;
+}
+.footer-link ul li a i{
+    font-size: 14px;
+}
+.footer-link ul li a:hover{
+    color:#cccccc;
+    padding-left: 2px;
 }
 /* FOOTER PART END */
+
+/* COPYRIGHT */
+.copyright{
+    background: var(--cp);
+    color: var(--wc);
+}
+.copyright-container{
+    border-top: 1px solid #cccccc;
+}
+.copyright p{
+    color: var(--wc);
+}
+.copyright ul li a{
+    font-size: 15px;
+}
+.copyright ul li a:hover{
+    color: #cccccc;
+}
+/* COPYRIGHT END */
+
+
+/* ========================================
+    Service Page Design CSS 
+======================================== */
+.pages-banner{
+    background-image: url(../img/image/service-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pages-banner-overlay{
+    background: #39004e00;
+}
+.pages-banner-content h4{
+    color: var(--wc);
+}
+.pages-banner-content .paragraph{
+    color: var(--wc);
+}
+.pages-banner-content .paragraph a:hover{
+    color: var(--dc);
+}
 
 
 

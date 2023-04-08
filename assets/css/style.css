@@ -6,7 +6,7 @@ header {
     transition: .4s;
 }
 .logo img {
-    max-width: 205px;
+    max-width: 170px;
 }
 .logo i {
     font-size: 20px;
@@ -354,7 +354,7 @@ header {
 
 /*FOOTER SECTION*/
 .footer-part {
-    background: var(--cp);
+    background: var(--lbc);
 }
 .footer-part .left p{
     line-height: 24px;
@@ -427,8 +427,8 @@ hr.footer{
     line-height: 24px;
     color: var(--wc);
 }
-.footer-logo img{
-    width: 80%;
+.footer-logo img {
+    width: 50%;
 }
 .footer-logo a{
     width: 100%;
@@ -535,7 +535,7 @@ hr.footer{
 
 /* COPYRIGHT */
 .copyright{
-    background: var(--cp);
+    background: var(--lbc);
     color: var(--wc);
 }
 .copyright-container{

@@ -199,7 +199,7 @@ header {
 /* ABOUT GRAND SYLHET HOTEL CSS START */
 #about{
     background: var(--bgc);
-    height: 600px;
+    height: 640px;
 }
 
 .aboutus-img{
@@ -212,19 +212,60 @@ header {
     top: 0px;
 }
 .long-img img{
-    width: 500px;
+    width: 350px;
     height: 500px;
+}
+
+.circle-img {
+    position: absolute;
+    top: 230px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--wc);
 }
 
 .circle-img img {
     position: absolute;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    top: 206px;
-    left: -40px;
+    width: 285px;
+    height: 285px;
+    top: 5px;
+    left: 6px;
 }
 /* ABOUT GRAND SYLHET HOTEL CSS END */
+
+/* AMENITIES PART CSS START */
+.section-header h3{
+    position: relative;
+}
+.section-header h3::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 36px;
+    width: 60px;
+    height: 3px;
+    background: var(--cp);
+    border-radius: 3px;
+    content: '';
+}
+
+.amenities-item i{
+    font-size: 32px;
+    color: #525252;
+}
+/* AMENITIES PART CSS END */
+
+/* ROOM PART CSS START */
+.room-img{
+    background-image: url(../img/photos/room-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+/* ROOM PART CSS END */
 
 
 

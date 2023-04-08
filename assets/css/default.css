@@ -34,9 +34,9 @@ h2{
     color: var(--wc);
 }
 h3{
-    font-weight: 500;
-    font-size: 50px;
-    color: var(--wc);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--lbc);
 }
 h4{
     font-weight: 600;
@@ -48,10 +48,10 @@ h5{
     font-size: 20px;
     color: var(--psb);
 }
-h6{
+h6 {
     font-weight: 500;
-    font-size: 18px;
-    color: var(--psb);
+    font-size: 20px;
+    color: var(--lbc);
 }
 
 ul {
@@ -75,11 +75,11 @@ a:hover {
 button {
     border: none;
 }
-.paragraph{
+.paragraph {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--dgc);
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--lbc);
 }
 .small-text{
     font-weight: 400;

@@ -5,6 +5,7 @@
     --lbc: #333333;
     --qs: #A7A7A7;
     --bgc: #efefef;
+    --bc: #000000;
 
     --psb: #003552;
     --gc: #CCCCCC;
@@ -128,4 +129,34 @@ button {
     transition: .4s;
     border-bottom: 1px solid var(--bgc);
     /* box-shadow: 3px 3px 10px 0px #33333396; */
+}
+
+.section-title h4{
+    font-size: 35px;
+    color: var(--bc);
+    font-weight: 700;
+}
+.section-title h4::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: var(--cp);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.section-title h6{
+    font-size: 20px;
+    color: var(--cp);
+    font-weight: 600;
+    padding: 10px;
+
+}
+.section-title p{
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 28px;
+
 }

@@ -1,9 +1,11 @@
 :root {
     --bgc: linear-gradient(90deg, #00B4DB -0.91%, #0083B0 100%);
     --wc: #ffffff;
+    --cp: #a28b51;
     --lbc: #333333;
-    --psb: #003552;
     --qs: #A7A7A7;
+
+    --psb: #003552;
     --gc: #CCCCCC;
     --bp: #002336;
 }
@@ -13,16 +15,16 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: var(--pc);
+    color: var(--lbc);
 }
 
 p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
     color: var(--lbc);
 }
 h2{
@@ -36,8 +38,8 @@ h3{
     color: var(--wc);
 }
 h4{
-    font-weight: 500;
-    font-size: 35px;
+    font-weight: 600;
+    font-size: 24px;
     color: var(--lbc);
 }
 h5{
@@ -84,13 +86,13 @@ button {
     color: var(--lbc);
 }
 
-.custom-btn:hover {
+.booking-btn .button{
+    font-weight: 400;
+    font-size: 16px;
     color: var(--wc);
-}
-.custom-btn.white-custom{
-    background: var(--wc);
-    border: 1px solid var(--sc);
-    color: var(--sc);
+    background: var(--cp);
+    padding: 10px 15px;
+    border-radius: 2px;
 }
 
 .readmore-btn {

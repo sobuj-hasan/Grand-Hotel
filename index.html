@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage | Grand Hotel</title>
     <!--    GOOGLE FONT-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <!--    BOOSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--    FONT AWSOME-->
@@ -29,29 +27,30 @@
     <section class="d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-3 text-start">
                     <div class="logo d-flex justify-content-between align-items-center">
                         <a href="index.html">
-                            <img src="assets/img/logo/logo" alt="Logo">
+                            <img src="assets/img/logo/logo.png" alt="Logo">
                         </a>
                         <i class="fa fa-bars d-md-none" onClick="mobileClick()" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="col-md-8 d-none d-md-block">
-                    <div class="menubar">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="business_scope.html">About Us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="features_capabilities.html">Features</a></li>
-                            <li><a href="contact_us.html">Contact</a></li>
-                            <li><a href="register.html" class="login-menu">Sign Up</a></li>
-                        </ul>
+                <div class="col-md-7 d-none d-md-block">
+                    <div class="top-menu mt-3 mb-2">
+                        <h4>Your Hotel or Resort Name Here</h4>
+                        <div class="location d-flex">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="ms-3">Nikunja-2, Khilkhet, Dhaka</p>
+                        </div>
+                        <div class="phone-contact d-flex">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="ms-3"> +880 12345678  / +880 12345678  / +880 12345678</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-end">
                     <div class="booking-btn">
-                        <a href="#">Booking Now</a>
+                        <a class="button" href="#">Booking Now</a>
                     </div>
                 </div>
             </div>
@@ -61,24 +60,17 @@
     <!--HEADER SECTION-->
     <header class="d-flex align-items-center">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-4">
-                    <div class="logo d-flex justify-content-between align-items-center">
-                        <a href="index.html">
-                            <img src="assets/img/logo/logo" alt="Logo">
-                        </a>
-                        <i class="fa fa-bars d-md-none" onClick="mobileClick()" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="col-md-8 d-none d-md-block">
+            <div class="row">
+                <div class="col-md-12 d-none d-md-block">
                     <div class="menubar">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="business_scope.html">About Us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="features_capabilities.html">Features</a></li>
-                            <li><a href="contact_us.html">Contact</a></li>
-                            <li><a href="register.html" class="login-menu">Sign Up</a></li>
+                            <li><a href="business_scope.html">Rooms</a></li>
+                            <li><a href="service.html">Daining</a></li>
+                            <li><a href="features_capabilities.html">Meetings</a></li>
+                            <li><a href="contact_us.html">Special Offers</a></li>
+                            <li><a href="contact_us.html">Membership Program</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -159,11 +151,54 @@
     <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
     <!--   END MOBILE MENU-->
 
-    <section class="py-5">
+    <!-- BANNER PART START -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/hotel-img/banner.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hotel or Tower Name Here</h5>
+                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/hotel-img/banner-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hotel or Tower Name Here</h5>
+                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/hotel-img/banner-3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hotel or Tower Name Here</h5>
+                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- BANNER PART END -->
+    <!-- ABOUT 5 START HOTEL START -->
+    <section>
         <div class="container">
-            <h2>Content Here !</h2>
+            asdfasdf adf dasf
         </div>
     </section>
+    <!-- ABOUT 5 START HOTEL END -->
+    <!-- BANNER PART END -->
 
     <!--    FOOTER SECTION-->
     <footer class="footer-part pt-5 pb-4">
@@ -171,7 +206,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="left pt-4">
-                        <img class="pt-3" src="assets/img/logo/logo" alt="logo">
+                        <img class="pt-3" src="assets/img/logo/logo.png" alt="logo">
                         <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, deleniti maiores maxime odio aspernatur ex atque numquam.</p>
                         <div class="input-group mb-5">
                             <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">

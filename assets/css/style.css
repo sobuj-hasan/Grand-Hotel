@@ -2,7 +2,7 @@
 
 /*HEADER*/
 header {
-    background: var(--bgc);
+    background: var(--cp);
     transition: .4s;
 }
 .logo img {
@@ -19,18 +19,18 @@ header {
     cursor: pointer;
 }
 .menubar ul {
-    text-align: right;
+    text-align: left;
 }
 .menubar ul li {
     display: inline-block;
 }
 .menubar ul li {
-    padding: 20px 0px;
+    padding: 14px 0px;
 }
 .menubar ul li a {
     font-weight: 500;
     font-size: 16px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     display: inline-block;
     padding: 7px 24px;
     color: var(--wc);
@@ -181,6 +181,29 @@ header {
     position: inherit !important;
 }
 /*MOBILE MENU END*/
+.top-menu .location{
+    margin-bottom: -7px;
+}
+.top-menu i{
+    font-size: 18px;
+    color: var(--qs);
+}
+
+/* BANNER PART CSS START */
+.carousel-item {
+    max-height: 600px;
+    background-position: center;
+}
+/* BANNER PART CSS END */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -189,7 +212,7 @@ header {
 
 /*FOOTER SECTION*/
 .footer-part {
-    background: var(--psb);
+    background: var(--cp);
 }
 .footer-part .left p{
     line-height: 24px;

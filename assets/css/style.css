@@ -200,6 +200,7 @@ header {
 }
 /* BANNER PART CSS END */
 
+
 /* ABOUT GRAND SYLHET HOTEL CSS START */
 #about{
     background: var(--bgc);
@@ -274,13 +275,6 @@ header {
 
 /* FETURE SECTION */
 
-/* .feture-box{
-    background-image: linear-gradient(#0000666b, #0000666b), url(../img/image/hotel1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px;
-} */
 .feture-box {
     position: relative;
     border-radius: 10px;
@@ -341,7 +335,92 @@ header {
 
 /* FETURE SECTION */
 
+/* LOGIN PAGE CSS HERE */
+.signin {
+    background: var(--bgc);
+}
+.welcome {
+    width: 100%;
+    background: var(--cp);
+    padding: 45px;
+}
+.welcome h5 {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--wc);
+    margin-bottom: 80px;
+}
+.welcome h3 {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--wc);
+    width: 60%;
+    margin-bottom: 110px;
+}
+.welcome h6 {
+    font-size: 16px;
+    color: var(--wc);
+}
+.register .welcome h5 {
+    margin-bottom: 200px;
+}
+.register .welcome h3 {
+    margin-bottom: 248px;
+}
 
+.login-form {
+    background: var(--wc);
+    padding: 40px;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-form h5 {
+    color: var(--dvc);
+    font-size: 28px;
+    font-weight: 600;
+}
+.login-form label{
+    font-weight: 600;
+}
+
+.login-form .custom-control {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    height: 40px;
+    width: 100%;
+    padding-left: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--gc);
+}
+
+.auth-btn button{
+    width: 100%;
+    background: var(--cp);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--wc);
+    border-radius: 5px;
+    height: 45px;
+}
+.login-form .form-check-input:focus {
+    box-shadow: none;
+}
+.signup-link p {
+    position: absolute;
+    left: 45px;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--ac);
+}
+
+.signup-link a {
+    color: #1565C0;
+}
 
 
 

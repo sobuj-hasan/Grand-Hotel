@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Grand Hotel</title>
+    <title>Register | Grand Hotel</title>
     <!--    GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap"
         rel="stylesheet">
@@ -154,8 +154,8 @@
     <!--   END MOBILE MENU-->
 
     <!-- LOGIN PAGE DESIGN START -->
-    <section class="signin py-5">
-        <div class="container my-lg-3">
+    <section class="signin register py-5">
+        <div class="container my-lg-2">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="welcome">
@@ -166,27 +166,38 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-3 mt-md-0">
                     <div class="login-form">
-                        <h5>Investor Login</h5>
+                        <h5>Investor Registration</h5>
                         <div class="input-group mt-4">
-                            <label class="h6 text-bold" for="">Investor ID or Email</label>
-                            <input class="custom-control" type="text" placeholder="Investor ID or Email" name="email">
+                            <label class="h6 text-bold" for="">Name</label>
+                            <input class="custom-control" type="text" placeholder="Full Name" name="name">
+                        </div>
+                        <div class="input-group mt-4">
+                            <label class="h6 text-bold" for="">Email</label>
+                            <input class="custom-control" type="text" placeholder="Email address" name="email">
+                        </div>
+                        <div class="input-group mt-4">
+                            <label class="h6 text-bold" for="">Investor ID</label>
+                            <input class="custom-control" type="number" placeholder="Investor ID" name="text">
                         </div>
                         <div class="input-group mt-4">
                             <label class="h6 text-bold" for="">Password</label>
-                            <input class="custom-control" type="password" id="loginInput" placeholder="Password" name="">
+                            <input class="custom-control" type="password" id="password" placeholder="Password" name="">
+                        </div>
+                        <div class="input-group mt-4">
+                            <label class="h6 text-bold" for="">Confirm Password</label>
+                            <input class="custom-control" type="password" id="confirm-password" placeholder="Re-enter Password" name="">
                         </div>
                         <div class="form-check mt-3">
-                            <input class="form-check-input" onclick="loginFunction()" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" onclick="togglePassword()" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Show Password
                             </label>
                         </div>
-
                         <div class="auth-btn text-center mb-5 mt-4">
-                            <button type="submit"> Login </button>
+                            <button type="submit"> Register </button>
                         </div>
                         <div class="signup-link">
-                            <p class="paragraph">Don't Have any account ?<a href="register.html"> Sign Up</a></p>
+                            <p class="paragraph">Already Have an account? <a href="login.html"> Login</a></p>
                         </div>
                     </div>
                 </div>
@@ -355,14 +366,21 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      function loginFunction() {
-        var login = document.getElementById("loginInput");
-        if (login.type === "password") {
-          login.type = "text";
-        } else {
-          login.type = "password";
+        function togglePassword() {
+            var login = document.getElementById("password");
+            if (login.type === "password") {
+                login.type = "text";
+            } else {
+                login.type = "password";
+            }
+
+            var register = document.getElementById("confirm-password");
+            if (register.type === "password") {
+                register.type = "text";
+            } else {
+                register.type = "password";
+            }
         }
-      }
     </script>
 
 </body>
